@@ -5,17 +5,17 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>KevinSong.se</title>
+    <title>Kevin Song</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 </head>
 
 <body id="page-top">
-
-
-    <div class="intro-page">
+    <div class="intro-page" id="intro">
         <div class="flex-container-column h-100">
             <div class="flex-container-row">
                 <div class="flex-container-column">
@@ -30,37 +30,130 @@
                 <a href="#about" class="scroll-down" address="true"></a>
             </div>
             <h1 class="empty"></h1>
-
         </div>
     </div>
 
     <!--About Section-->
-    <section class=" aboutme-page " id=" about ">
-
-        <address>
-                <a href="mailto:k36song@uwaterloo.ca"><i class="fas fa-envelope fa-3x color-bkg left-align" id="email"></i>
-                </a>
-            </address>
-        <a href="https://www.linkedin.com/in/kevin-song-aa493418a"><i class="fab fa-linkedin fa-3x color-bkg" id="linkedIn"></i>
-                </a>
-        <a href="https://github.com/SongRe"><i class="fab fa-github fa-3x color-bkg" id="gitHub"></i>
-        </a>
-        <h1 class="title color-bkg" id="aboutMeTitle">About <br> Me</h1>
-        <p></p>
-
-        <h1 class="subtitle" id="thanks">Thanks for visiting! <br> Scroll down to learn more about me.</h1>
-        <div class="arrow-container">
-            <!--<div class="arrow-down"></div>-->
-            <a href="#about" class="scroll-down" address="true"></a>
+    <section class=" aboutme-page " id="about">
+        <div class="flex-row" id="aboutRow">
+            <div class="flex-column item item-1" id="icons">
+                <address>
+                    <a href="mailto:k36song@uwaterloo.ca" target="_blank"><i class="fas fa-envelope fa-3x color-bkg left-align" id="email"></i>
+                    </a>
+                </address>
+                <a href="https://www.linkedin.com/in/kevin-song-aa493418a" target="_blank"><i class="fab fa-linkedin fa-3x color-bkg" id="linkedIn"></i>
+                    </a>
+                <a href="https://github.com/SongRe" target="_blank"><i class="fab fa-github fa-3x color-bkg" id="gitHub"></i>
+            </a>
+            </div>
+            <h1 class="title color-beige item item-2" id="aboutMeTitle">About <br> Me:</h1>
+            <p id="aboutMeText" class="item item-3">
+                I am a <a class="a-text" href="" target="_blank"> Software Engineering Student at the University of Waterloo</a> passionate about learning new technologies, coding languages, and skills.
+                <br>
+                <br> I have a strong interest in app, full-stack and general software development. Always eager to learn more, I aim to
+                <a class="a-text" href="#my_projects">apply my knowledge and skills</a> to solve real-world problems efficiently and rigorously.
+                <br>
+                <br> In addition to a strong background in coding, project management, and robotics, I also have experience in leadership.
+                <br>
+                <br> I'm always enthusiastic to connect with others in the field of STEM. Feel free to learn more about me
+                <a href="https://docs.google.com/document/d/1k8jNHcQp2SrgWYkUETCfwc3WdAo2x4ONzJ2kKY7lSYU/edit?usp=sharing" class="a-text" target="_blank"> here.</a></p>
         </div>
         <h1 class="empty"></h1>
-
-
-
     </section>
-    <section class="myprojects-page ">
-        <h1>myprojectssection</h1>
+
+    <!--Projects-->
+    <section class="myprojects-page" id="my_projects">
+        <div class="flex-column">
+            <h1 class="title color-bkg center-align" id="myprojects-title">My Projects</h1>
+            <p class="subText center-align">
+                <br>
+                <br> My Programming Languages & Tools:
+                <p class="project-icon-font">
+                    <i class="fab fa-html5 fa-1x img-icon"></i>&nbsp;
+                    <i class="fab fa-css3-alt fa-1x img-icon"></i>&nbsp; C/C#/C++&nbsp;
+                    <i class="fab fa-java fa-1x img-icon"></i> Java &nbsp;
+                </p>
+            </p>
+            <!-- Swiper -->
+            <!-- CoLinkEd -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/colinked.png" class="image">
+                        <div class="middle">
+                            <div class="text">
+                                <div class="text font-weight-bold"> CoLinkEd: <br> </div>
+                                <a href="https://github.com/CKaps1/IvyHacks2020" target="_blank"><i class="fab fa-github fa-2x img-icon center-align" data-fa-transform="down-5"></i></a> <br><br> A web application that effectively connects students with
+                                special needs to specialized mentors and resources. Was made during IvyHacks2020.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--FRC-->
+                    <div class="swiper-slide">
+                        <img src="assets/frc.jpeg" class="image">
+                        <div class="middle">
+                            <div class="text">
+                                <div class="text font-weight-bold">FIRST Robotics Competition: <br> </div>
+                                <a href="https://github.com/7614/2020CompetitionCode" target="_blank"><i class="fab fa-github fa-2x img-icon center-align" data-fa-transform="down-5"></i></a> <br><br> Team 7614's robot code for the 2019 - 2020 FIRST Robotics
+                                Competition Season. Written in Java.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--FlexTime-->
+                    <!-- <div class="swiper-slide">
+                        <img src="assets/frc.jpeg" class="image">
+                        <div class="middle">
+                            <div class="text">
+                                <div class="text font-weight-bold">FIRST Robotics Competition: <br> </div>
+                                <a href="https://github.com/CKaps1/IvyHacks2020" target="_blank"><i class="fab fa-github fa-2x img-icon center-align" data-fa-transform="down-5"></i></a> <br><br> Team 7614's robot code for the 2019 - 2020 FIRST Robotics
+                                Competition Season. Written in Java.
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="swiper-slide">
+                        <p class="slide-title">FlexTime
+                            <br>
+                            <a href="https://github.com/SongRe/FlexTime" target="_blank"><i class="fab fa-github fa-2x img-icon" data-fa-transform="down-5"></i></a>
+                            <p class="slide-text color-bkg">
+                                A workout timer android application in development, with a priority on user interface and user experience.
+                            </p>
+                            <br>
+                        </p>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination color-bkg"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
+            </div>
+            <script>
+                var swiper = new Swiper('.swiper-container', {
+                    slidesPerView: 2,
+                    spaceBetween: 150,
+                    slidesPerGroup: 1,
+                    centeredSlides: true,
+                    loop: true,
+                    loopFillGroupWithBlank: true,
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                });
+            </script>
+        </div>
     </section>
+
+    <section class="footer-section" id="footer">
+        <div class="container">
+            <p class="footer-text center-align">
+                Designed and created from scratch by Kevin Song.<br> Last updated January 2021.
+            </p>
+        </div>
+    </section>
+
 
 </body>
 
