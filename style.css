@@ -432,6 +432,8 @@
         transition: top ease 0.5s;
     }
     
+
+    
     .swiper-slide:hover .image {
         opacity: 0.3;
     }
