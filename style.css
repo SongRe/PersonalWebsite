@@ -162,6 +162,7 @@
     }
     
     .item-1 {
+        
         flex-grow: 1;
         flex-shrink: 3;
         flex-basis: 1;
@@ -340,7 +341,8 @@
     }
     
     #icons {
-        margin-left: 8rem;
+        /* margin-left: 8rem; */
+        margin-left: 10.5%;
     }
     
     #gitHub {
@@ -351,11 +353,12 @@
     #aboutMeTitle {
         font-size: 5rem;
         text-align: center;
-        margin-left: 8rem;
+        /* margin-left: 8rem; */
+        margin-left: 10%;
     }
     
     #aboutRow {
-        margin-top: 12rem;
+        margin-top: 15%;
     }
     
     #CoLinked-slide {
@@ -368,7 +371,7 @@
     }
     
     #myprojects-title {
-        margin: 2rem;
+        margin: 2.5%;
     }
     
     #aboutMeText {
@@ -379,8 +382,10 @@
         line-height: 1.5rem;
         font-style: italic;
         text-align: left;
-        margin-left: 7.5rem;
-        margin-right: 2rem;
+        /* margin-left: 7.5rem;
+        margin-right: 2rem; */
+        margin-left: 8.5%;
+        margin-right: 2.5%;
     }
     
     .subText {
@@ -507,9 +512,9 @@
     .footer-section {
         background-color: #3c2f2f;
         width: 100%;
-        margin-top: 0rem;
+        /* margin-top: 0rem;
         padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding-bottom: 2rem; */
         height: auto;
         background-position: center;
         background-repeat: no-repeat;
@@ -525,5 +530,5 @@
         text-align: center;
         line-height: 1.5rem;
         align-items: center;
-        padding: 0.5rem;
+        /* padding: 0.5rem; */
     }
